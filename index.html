@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="pace-master/themes/silver/pace-theme-flat-top.css"
+      rel="stylesheet"
+    />
+    <title>Vanilla JS Todo App </title>
+  </head>
+  <body style="background-color: rgba(127, 229, 255, 0.986)">
+    <div class="container fluid">
+      <div class="row">
+        <div
+          class="d-flex flex-row justify-content-center align-items-end bg-primary text-white"
+          style="height: 200px"
+        >
+            <input 
+              type="text"
+              class="form-control w-50 m-1"
+              id="contentInput"
+              placeholder="Eklenecek metni buraya yazın..."
+            />
+            <button class="btn btn-info m-1" onclick="addElement()">Ekle</button>
+            <button class="btn btn-info m-1" onclick="replaceElement()">
+              Değiştir
+            </button>
+            <button class="btn btn-danger m-1" onclick="deleteElement()">
+              Sil
+            </button>
+            <button
+              class="btn btn-success m-1"
+              id="btn"
+            >
+              Gizle
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3" id="divParent" style="display: block"></div>
+      </div>
+    
+    </div>
+    <script src="pace-master/pace.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
